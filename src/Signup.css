@@ -1,0 +1,21 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+
+.mainform {
+    border-radius: 10px;
+    width: 220px;
+    height: 320px;
+    align-items: center;
+    background: #017df8;
+    padding: 0px 0px 30px 50px;
+
+}
+.mainform2 {
+    justify-content: center;
+    align-items: center;
+}
