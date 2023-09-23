@@ -9,10 +9,9 @@ body{
 
 .mainform {
     border-radius: 10px;
-    box-shadow: 15px  15px 15px gray;
     width: 220px;
     height: 30rem;
-    background: #017df8;
+    background-color: rgba(0,85,255,0.478);
     padding: 20px 85px 55px 50px;
 
 }
@@ -32,19 +31,25 @@ h2 {
 input {
     width: 250px;
     height: 30px;
-    border-radius:10px;
+    border-radius:5px;
 }
 
 .btn {
    border-radius:5px;
    margin-top: 40px;
-   margin-left: 30px;
-   padding: 0px 82px 15px 65px;
+   margin-left: 27px;
    background-color: black;
    color: white;
+   width: 200px;
+   height: 30px;
 }
 
 .mainlabel {
    align-items:center;
    height: 200px;
+}
+
+.mainform:hover {
+    box-shadow: 15px 15px 15px gray ;
+    transition: all 0.2s linear;
 }
