@@ -3,19 +3,48 @@ body{
     align-items: center;
     display: flex;
     height: 100vh;
+    box-shadow: 10px ;
 }
 
 
 .mainform {
     border-radius: 10px;
+    box-shadow: 15px  15px 15px gray;
     width: 220px;
-    height: 320px;
-    align-items: center;
+    height: 30rem;
     background: #017df8;
-    padding: 0px 0px 30px 50px;
+    padding: 20px 85px 55px 50px;
 
 }
 .mainform2 {
-    justify-content: center;
-    align-items: center;
+   max-width: 300px;
+   margin: 0 auto;
+   
+}
+
+h2 {
+    align-items:center;
+    padding-inline-start: 80px;
+    padding-top: 35px;
+    
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border-radius:10px;
+}
+
+.btn {
+   border-radius:5px;
+   margin-top: 40px;
+   margin-left: 30px;
+   padding: 0px 82px 15px 65px;
+   background-color: black;
+   color: white;
+}
+
+.mainlabel {
+   align-items:center;
+   height: 200px;
 }
