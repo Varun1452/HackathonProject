@@ -88,3 +88,8 @@ button:hover {
     transition: all 0.2s linear;
 
 }
+
+.ErrMessage{
+    color: red;
+    font-size: medium;
+  }
