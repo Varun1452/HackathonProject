@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Signup from './Signup';
+import ContactUs from './Contact_Us';
 import reportWebVitals from './reportWebVitals';
 import Login from './Login';
 
@@ -10,6 +11,8 @@ root.render(
   <React.StrictMode>
     <Signup />
     <Login />
+    <ContactUs />
+
   </React.StrictMode>
 );
 
