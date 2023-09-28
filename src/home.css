@@ -1,3 +1,27 @@
-body{
-    /* background: ; */
+.nav-link {
+    padding: 0 20px;
+    color: #202020;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
+
+.navbar-nav :hover{
+    color: #e5fe00;
+    transition-duration: 1s;
+}
+
+h2{
+    margin-top: -50px;
+}
+
+.navbar-nav  {
+ background-color: #00d8fe;
+    padding-top: 3.5rem;
+    padding-left: 30px;
+    height: 2rem;
+    border-radius: 0px 0px 35px 35px;
+}
+
