@@ -1,17 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
 import Signup from './Signup';
 import ContactUs from './Contact_Us';
+=======
+import home from './home';
+
 import reportWebVitals from './reportWebVitals';
 import Login from './Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
     <Signup />
     <Login />
     <ContactUs />
+
+=======
+    <home />
 
   </React.StrictMode>
 );
