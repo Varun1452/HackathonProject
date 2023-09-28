@@ -4,30 +4,28 @@ import './Signup.css'
 function Signup() {
   return (
     <body>
-      <form className='mainform2'>
 
-        <div className='mainform'>
+    <div className='mainform'>
+      <form>
+
+        <div className='mainContainer'>
         <h2>SignUp</h2>
 
-          <label className='mainlabel'>UserName</label><br />
-          <input type='text' placeholder='Enter Your UserName' className='maininput' /><br />
-
-          <label className='mainlabel'>Email</label><br />
-          <input type='text' placeholder='Enter Your Email' className='maininput' /><br />
-
-          <label className='mainlabel'>Phone No</label><br />
-          <input type='text' placeholder='Enter Your Phone No' className='maininput' /><br />
-
-          <label className='mainlabel'>Password</label><br />
-          <input type='password' placeholder='Enter Your Password' className='maininput' /><br />
-
-          <label className='mainlabel'>Confiorm Password</label><br />
-          <input type='password' placeholder='Enter Your Confiorm Password' className='maininput' />
-
+          <label>UserName</label> 
+          <input type='text'  className='maininput' /><br />
+          <label>Email</label>
+          <input type='text'  className='maininput' /><br />
+          <label>PhoneNo</label>
+          <input type='text' className='maininput' /><br />
+          <label>Password</label>
+          <input type='Password'  className='maininput' /><br />
+          <label>Confirm Password</label>
+          <input type='Password'  className='maininput' /><br />
+ 
           <button className='btn'>SignUp</button>
         </div >
       </form>
-
+      </div>   
 
     </body >
   );
