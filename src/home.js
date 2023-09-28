@@ -1,4 +1,19 @@
-<html>
-    <h1>hello</h1>
+import './home.css';
+// import { useState } from "react";
+import React from 'react'
 
-</html>
+
+function home() {
+
+   
+    return (
+        <div>
+           
+                <h1>hello</h1>
+            
+
+        </div>
+    );
+}
+
+export default home;
