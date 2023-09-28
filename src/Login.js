@@ -31,7 +31,7 @@ function Login() {
 
     const PasswordHandle = (e) => {
         let item = e.target.value;
-        if (item.length >= 3 && item.length <= 7 || item.length == 0) {
+        if (item.length >= 5 && item.length <= 100 || item.length == 0) {
             setPasswordErr(false)
         }
         else {
