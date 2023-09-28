@@ -11,16 +11,16 @@ function Signup() {
         <div className='mainContainer'>
         <h2>SignUp</h2>
 
-          
-          <input type='text' placeholder='Enter Your UserName' className='maininput' /><br />
-
-          <input type='text' placeholder='Enter Your Email' className='maininput' /><br />
-        
-          <input type='text' placeholder='Enter Your PhoneNo' className='maininput' /><br />
-
-          <input type='Password' placeholder='Enter Your Password' className='maininput' /><br />
-
-          <input type='Password' placeholder='Enter Your Confirm Password' className='maininput' /><br />
+          <label>UserName</label> 
+          <input type='text'  className='maininput' /><br />
+          <label>Email</label>
+          <input type='text'  className='maininput' /><br />
+          <label>PhoneNo</label>
+          <input type='text' className='maininput' /><br />
+          <label>Password</label>
+          <input type='Password'  className='maininput' /><br />
+          <label>Confirm Password</label>
+          <input type='Password'  className='maininput' /><br />
  
           <button className='btn'>SignUp</button>
         </div >

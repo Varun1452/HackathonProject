@@ -35,7 +35,7 @@ body {
 h2 {
     align-items:center;
     padding-inline-start: 80px;
-    padding-top: 35px;
+    padding-top: 5px;
     color: #00203fff;
     
 }
@@ -43,7 +43,7 @@ h2 {
 input {
     width: 250px;
     height: 30px;
-    border-radius:40px;
+    border-radius: 10px;
     border: none;
     outline: none;
     border: 2px solid rgba(255, 255, 255, 0.696);  
@@ -70,7 +70,7 @@ input::placeholder {
 
 .maininput {
     padding: 0px 0px 0px 10px;
-    margin: 15px;
+    margin: 2px;
     margin-left: -4px;
     margin-top: 10px;
 }
