@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Signup from './Signup';
 //import ContactUs from './Contact_Us';
 import reportWebVitals from './reportWebVitals';
 //import Login from './Login';
-const mongoose = require('mongoose');
+//import Todo from './todo_list'
+//import Signup from './Signup';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Signup/>
+    <App/>
   </React.StrictMode>
 
 
