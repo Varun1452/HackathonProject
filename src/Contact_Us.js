@@ -4,8 +4,8 @@ import "./ContactUs.css"
   const ContactUs = () => {
     const [fname,setFName] = useState('');
       const [fnameErr,setFNameErr] = useState(false);
-    const [lname,setLname] = useState('');
-      const [lnameErr,setLnameErr] = useState(false);
+    // const [lname,setLname] = useState('');
+    //   const [lnameErr,setLnameErr] = useState(false);
     const [mail,setMail] = useState('');
       const [mailErr,setMailErr] = useState(false);
     const [number,setNumber] = useState('');
@@ -29,18 +29,18 @@ import "./ContactUs.css"
     }
     
 //LastName Function Start//
-  const LastNameHandle = (e) => {
-    console.log(lname)
-    let LNameitem = e.target.value;
+//   const LastNameHandle = (e) => {
+//     console.log(lname)
+//     let LNameitem = e.target.value;
     
-    if (LNameitem.length > 4 && LNameitem.length <= 15 || LNameitem.length==0) {
-        setLnameErr(false)
-    }
-    else{
-        setLnameErr(true)
-    }
-    setLname(LNameitem)
-}
+//     if (LNameitem.length > 4 && LNameitem.length <= 15 || LNameitem.length==0) {
+//         setLnameErr(false)
+//     }
+//     else{
+//         setLnameErr(true)
+//     }
+//     setLname(LNameitem)
+// }
 
 //Email Function Start//
 const MailHandle = (e) => {
@@ -88,16 +88,19 @@ const MessageHandle = (e) => {
         alert('Your Name is Invalid OR Empty');
         
       }
-      if (lnameErr == true || lname.length ==0) {
-        alert('Your LastName is Invalid OR Empty');
+      // if (lnameErr == true || lname.length ==0) {
+      //   alert('Your LastName is Invalid OR Empty');
         
-      }if (mailErr == true || mail.length ==0) {
+      // }
+      if (mailErr == true || mail.length ==0) {
         alert('Your Email is Invalid OR Empty');
         
-      }if (numberErr == true || number.length ==0) {
-        alert('Your Number is Invalid OR Empty');
+      }
+      if (numberErr == true || number.length ==0) {
+         alert('Your Number is Invalid OR Empty');
         
-      }if (msgErr == true || msg.length ==0) {
+      }
+      if (msgErr == true || msg.length ==0) {
         alert('Your Message is Invalid OR Empty');
         
       }
@@ -105,7 +108,7 @@ const MessageHandle = (e) => {
     }
 
     const SubmitForm = () => {
-      if(fnameErr === true || lnameErr === true || mailErr === true || numberErr === true || msgErr === true || fname.length === 0 || lname.length === 0 || mail.length === 0 || number.length === 0 || msg.length === 0){
+      if(fnameErr === true || numberErr === true || mailErr === true || msgErr === true || fname.length === 0 || number.length === 0 || mail.length === 0 || msg.length === 0){
         document.getElementById('FailMessage').innerHTML = "Registration Unsuccessful";
         document.getElementById('FailMessage').style.display = "block"
         document.getElementById('PassMessage').style.display = "none"
@@ -124,22 +127,22 @@ const MessageHandle = (e) => {
       <h2>Contact Us</h2>
         <div className="space">
           <span className="User-icon"></span>
-            <input type="varchar"  name="firstName" onChange={FirstNameHandle} placeholder="Enter your First Name"/><br/>{fnameErr?<span className="ErrorMessage">Invalid :- Must Have 2-10 letters</span>:""}
+            <input type="varchar"  name="firstName" onChange={FirstNameHandle} placeholder="Enter your First Name"/>{fnameErr?<span className="ErrorMessage">Invalid :- Must Have 2-10 letters</span>:""}
         </div>
       
-      <div className="space">
+      {/* <div className="space">
         <span className="User-icon"></span>
           <input type="varchar" name="lastName" onChange={LastNameHandle} placeholder="Enter your Last Name"/><br/>{lnameErr?<span className="ErrorMessage">Invalid :- Must Have 4-15 letters</span>:""}
-      </div>
+      </div> */}
       
       <div className="space">
         <span className="User-icon"></span>
-          <input type="email"  name="email" onChange={MailHandle} placeholder="Enter your Email"/><br/>{mailErr?<span className="ErrorMessage">Invalid :- ID Must Contain @gmail.com</span>:""}
+          <input type="email"  name="email" onChange={MailHandle} placeholder="Enter your Email"/>{mailErr?<span className="ErrorMessage">Invalid :- ID Must Contain @gmail.com</span>:""}
       </div>
 
       <div className="space">
         <span className="User-icon"></span>
-          <input type="varchar"  name="number" onChange={NumberHandle} placeholder="Enter your Phone Number"/><br/>{numberErr?<span className="ErrorMessage">Invalid :- Number Must start with 9,8,7,6</span>:""}
+          <input type="varchar"  name="number" onChange={NumberHandle} placeholder="Enter your Phone Number"/>{numberErr?<span className="ErrorMessage">Invalid :- Number Must start with 9,8,7,6</span>:""}
       </div>
 
       <div className="space">
@@ -154,7 +157,8 @@ const MessageHandle = (e) => {
   
       </form>
     </div>
+    
     );
   }
-
+ 
  export default ContactUs

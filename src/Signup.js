@@ -1,28 +1,31 @@
-import { React } from 'react';
+import React, {useState} from 'react'
+
 import './Signup.css'
 
-function Signup() {
+  function SignUp () {
+
+
   return (
     <body>
 
-    <div className='mainform'>
+    <div className='mainContainer'>
       <form>
 
-        <div className='mainContainer'>
+        <div className='mainform'>
         <h2>SignUp</h2>
 
-          <label>UserName</label> 
+          <label className='mainlabel'>UserName</label> 
           <input type='text'  className='maininput' /><br />
-          <label>Email</label>
+          <label className='mainlabel'>Email</label>
           <input type='text'  className='maininput' /><br />
-          <label>PhoneNo</label>
+          <label className='mainlabel'>PhoneNo</label>
           <input type='text' className='maininput' /><br />
-          <label>Password</label>
+          <label className='mainlabel'>Password</label>
           <input type='Password'  className='maininput' /><br />
-          <label>Confirm Password</label>
-          <input type='Password'  className='maininput' /><br />
- 
-          <button className='btn'>SignUp</button>
+          <label className='mainlabel'>Confirm Password</label>
+          <input type='Password'  className='maininput'/><br />
+
+          <button type=''>SignUp</button>
         </div >
       </form>
       </div>   
@@ -30,4 +33,5 @@ function Signup() {
     </body >
   );
 }
-export default Signup;
+export default SignUp
+;
